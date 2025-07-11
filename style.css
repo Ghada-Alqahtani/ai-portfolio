@@ -1,0 +1,267 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #111;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo .dot {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.logo .role {
+  font-weight: normal;
+  color: #888;
+  margin-left: 6px;
+  font-size: 0.9rem;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+/* Main Layout for Home Page */
+main.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 80px 40px;
+  flex-wrap: wrap;
+}
+
+/* Circle Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.resume { background: #f2b100; }
+.projects { background: #f44336; }
+.contact { background: #73d3d3; }
+
+/* Introduction (Home page right side) */
+.intro {
+  max-width: 400px;
+  padding-top: 10px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+  font-size: 0.8rem;
+  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Resume Page (Vertical layout) */
+.resume-vertical {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+.resume-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.resume-block {
+  margin-bottom: 50px;
+}
+
+.resume-block h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.resume-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.resume-left {
+  max-width: 700px;
+  font-size: 0.95rem;
+}
+
+.resume-left strong {
+  font-weight: bold;
+}
+
+.resume-left small {
+  display: block;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 3px;
+}
+
+.resume-right {
+  min-width: 100px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+/* Horizontal line */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 40px 0;
+}
+
+.project-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin: 60px 40px 30px;
+  flex-wrap: wrap;
+}
+
+.left-info {
+  flex: 1;
+  min-width: 280px;
+  max-width: 300px;
+}
+
+.left-info h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.left-info p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.right-description {
+  flex: 2;
+  min-width: 300px;
+  max-width: 600px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 40px;
+}
+
+.project-images img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Navigation Links (fixed version) */
+.navigation-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 40px;
+  font-size: 0.9rem;
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: #4a148c;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+  color: #000;
+}
+
+.project-images video {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

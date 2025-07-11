@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio | Ghada Alqahtani</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main.portfolio-page {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .portfolio-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-header p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .portfolio-grid a img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-grid a:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span class="dot"></span>
+      <strong>Ghada Alqahtani</strong> <span class="role">AI Graduate</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Portfolio</a>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <main class="portfolio-page">
+    <div class="portfolio-header">
+      <h1>My Portfolio</h1>
+      <p>Welcome to my portfolio. Here you’ll find a selection of my work. Explore my projects to learn more about what I do.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <a href="project1.html"><img src="images/unifix.png" alt="UniFix Project" /></a>
+      <a href="project2.html"><img src="images/peppa_ai.png" alt="Peppa AI" /></a>
+      <a href="project3.html"><img src="images/yolo_detection.png" alt="YOLOv8 Detection" /></a>
+      <a href="project4.html"><img src="images/suspect_id.png" alt="Suspect Identifier" /></a>
+      <a href="project5.html"><img src="images/hogwarts_adventure.png" alt="Hogwarts Adventure Game" /></a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <p><strong>Email</strong><br>ghadaazizqh@gmail.com</p>
+    </div>
+    <div class="footer-section">
+      <p><strong>GitHub</strong><br>
+        <a href="https://github.com/Ghada-Alqahtani" target="_blank">
+          <i class="fab fa-github fa-xl"></i>
+        </a>
+      </p>
+    </div>
+    <div class="footer-section">
+      <p><strong>LinkedIn</strong><br>
+        <a href="https://www.linkedin.com/in/ghada-al-qahtani-1baa10372/" target="_blank">
+          <i class="fab fa-linkedin fa-xl"></i>
+        </a>
+      </p>
+    </div>
+    <div class="footer-section">
+      <p>© 2025 by Ghada Alqahtani.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

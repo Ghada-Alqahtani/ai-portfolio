@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catch | Portfolio</title>
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #111;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .logo .dot {
+      width: 10px;
+      height: 10px;
+      background-color: orange;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .logo .role {
+      font-weight: normal;
+      color: #888;
+      margin-left: 6px;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 0.9rem;
+    }
+
+    /* Project Layout */
+    .project-layout {
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+      margin: 60px 40px 30px;
+      flex-wrap: wrap;
+    }
+
+    .left-info {
+      flex: 1;
+      min-width: 280px;
+      max-width: 300px;
+    }
+
+    .left-info h1 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+
+    .left-info p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .right-description {
+      flex: 2;
+      min-width: 300px;
+      max-width: 600px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .project-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 40px;
+    }
+
+    .project-images img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Navigation Links */
+    .navigation-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 60px 40px;
+      font-size: 0.9rem;
+    }
+
+    .navigation-links a {
+      text-decoration: none;
+      color: #4a148c;
+      font-weight: bold;
+      padding: 10px 15px;
+      transition: color 0.3s ease;
+    }
+
+    .navigation-links a:hover {
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      border-top: 1px solid #ccc;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      margin: 10px;
+      text-align: center;
+      flex: 1 1 200px;
+    }
+
+    .footer-section a {
+      text-decoration: none;
+      color: #000;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="dot"></div>
+      Ghada Alqahtani <span class="role">AI Graduate</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+  </header>
+
+  <!-- Main Project Info -->
+  <div class="project-layout">
+    <div class="left-info">
+      <h1>Catch</h1>
+
+      <p><strong>Project Type</strong><br>Identity reveal</p>
+
+      <p><strong>Date</strong><br>2025</p>
+
+      <p><strong>Role</strong><br>Developer</p>
+
+      <p><strong>Training Center</strong><br>Tuwaiq Academy</p>
+    </div>
+
+    <div class="right-description">
+      <p>
+        With growing security challenges, advanced suspect identification technologies are essential. <strong>Catch</strong> is an AI-powered system that uses computer vision and facial recognition to identify wanted individuals or their look alike based on forensic sketches. This helps law enforcement minimize human error and enhance search accuracy.
+      </p>
+    </div>
+  </div>
+
+  <!-- Project Images -->
+  <div class="project-images">
+    <img src="images/catch1.png" alt="Criminal Detection Example 1" />
+    <img src="images/catch2.png" alt="Criminal Detection Example 2" />
+  </div>
+
+  <!-- Navigation -->
+  <div class="navigation-links">
+    <a href="project4.html">← Previous Project</a>
+    <a href="project6.html">Next Project →</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <p><strong>Email</strong><br>ghadaazizqh@gmail.com</p>
+    </div>
+    <div class="footer-section">
+      <p><strong>GitHub</strong><br>
+        <a href="https://github.com/Ghada-Alqahtani" target="_blank">
+          <i class="fab fa-github fa-xl"></i>
+        </a>
+      </p>
+    </div>
+    <div class="footer-section">
+      <p><strong>LinkedIn</strong><br>
+        <a href="https://www.linkedin.com/in/ghada-al-qahtani-1baa10372/" target="_blank">
+          <i class="fab fa-linkedin fa-xl"></i>
+        </a>
+      </p>
+    </div>
+    <div class="footer-section">
+      <p>© 2025 by Ghada Alqahtani.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

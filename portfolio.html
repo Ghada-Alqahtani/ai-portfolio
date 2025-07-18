@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ghada Alqahtani</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .portfolio-page {
+      padding: 50px;
+      text-align: center;
+    }
+    .portfolio-page h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .portfolio-page p {
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      max-width: 280px;
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background-color: #fff;
+      text-align: center;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #007acc;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span class="dot"></span>
+      <strong>Ghada Alqahtani</strong> <span class="role">AI Graduate</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="portfolio.html">Portfolio</a>
+    </nav>
+  </header>
+
+  <!-- Portfolio Content -->
+  <main class="portfolio-page">
+    <h1>Areas of Interest</h1>
+    <p>Take a look at some of the things I love working on.</p>
+
+    <div class="grid">
+      <a href="cloud-compute.html" class="card">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Compute</h3>
+        <p>I maintain servers for database storage, model training, and model deployment.</p>
+      </a>
+      <a href="nlp.html" class="card">
+        <i class="fas fa-comment-dots"></i>
+        <h3>NLP</h3>
+        <p>I apply NLP techniques to understand human language and interaction.</p>
+      </a>
+      <a href="machine-learning.html" class="card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Machine Learning</h3>
+        <p>I enjoy both the math and the implementation of machine learning.</p>
+      </a>
+      <a href="parallel-computing.html" class="card">
+        <i class="fas fa-layer-group"></i>
+        <h3>Parallel Computing</h3>
+        <p>I work with big data tools like Hadoop and Hive to extract insights.</p>
+      </a>
+      <a href="model-deployment.html" class="card">
+        <i class="fas fa-cogs"></i>
+        <h3>Model Deployment</h3>
+        <p>I deploy machine learning models into production using REST APIs.</p>
+      </a>
+      <a href="data-analytics.html" class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Data Analytics</h3>
+        <p>I love presenting data stories with clarity and beauty.</p>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <p><strong>Email</strong><br>ghadaazizqh@gmail.com</p>
+    </div>
+    <div class="footer-section">
+      <p><strong>GitHub</strong><br>
+        <a href="https://github.com/Ghada-Alqahtani" target="_blank">
+          <i class="fab fa-github fa-xl"></i>
+        </a>
+      </p>
+    </div>
+    <div class="footer-section">
+      <p><strong>LinkedIn</strong><br>
+        <a href="https://www.linkedin.com/in/ghada-al-qahtani-1baa10372/" target="_blank">
+          <i class="fab fa-linkedin fa-xl"></i>
+        </a>
+      </p>
+    </div>
+    <div class="footer-section">
+      <p>© 2025 by Ghada Alqahtani.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

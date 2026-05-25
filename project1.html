@@ -2,113 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>UniFix — Predictive Maintenance | Ghada Alqahtani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>UniFix | Ghada Alqahtani</title>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <style>
-    main.project-page {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 80px 40px;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    .project-left {
-      flex: 1;
-      max-width: 300px;
-    }
-
-    .project-left h1 {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-    }
-
-    .project-left p {
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-      line-height: 1.6;
-    }
-
-    .project-right {
-      flex: 2;
-      max-width: 700px;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #222;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: space-between;
-      padding: 60px 40px 30px;
-      font-size: 0.85rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #000;
-    }
-
-    .nav-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
+
 <body>
 
-  <!-- Header -->
   <header>
     <div class="logo">
       <span class="dot"></span>
-      <strong>Ghada Alqahtani</strong> <span class="role">AI Graduate</span>
+      <div>
+        <strong>Ghada Alqahtani</strong>
+        <span class="role">AI Graduate</span>
+      </div>
     </div>
+
     <nav>
       <a href="index.html">Home</a>
       <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="portfolio.html">Portfolio</a>
     </nav>
   </header>
 
-  <!-- Project Content -->
-  <main class="project-page">
-    <div class="project-left">
+  <main class="project-detail-page">
+
+    <section class="project-detail-hero">
+      <p class="tag">Graduation Project</p>
       <h1>UniFix — Predictive Maintenance</h1>
-      <p><strong>Project Type</strong><br>Graduation Project</p>
-      <p><strong>Date</strong><br>2024 – 2025</p>
-      <p><strong>Role</strong><br>AI Researcher</p>
+      <p>
+        A smart predictive maintenance system designed to detect hidden failure patterns
+        and support better maintenance planning.
+      </p>
+    </section>
+
+    <section class="project-detail-grid">
+
+      <aside class="project-info-card">
+        <h2>Project Details</h2>
+
+        <div class="info-line">
+          <strong>Project Type</strong>
+          <span>Graduation Project</span>
+        </div>
+
+        <div class="info-line">
+          <strong>Date</strong>
+          <span>2024 – 2025</span>
+        </div>
+
+        <div class="info-line">
+          <strong>Role</strong>
+          <span>AI Researcher</span>
+        </div>
+
+        <div class="info-line">
+          <strong>Focus</strong>
+          <span>Machine Learning</span>
+        </div>
+      </aside>
+
+      <section class="project-description-card">
+        <h2>About the Project</h2>
+
+        <p>
+          UniFix is a predictive maintenance solution for campus facilities within
+          Princess Nourah bint Abdulrahman University. The goal of the project is
+          to create an intelligent prediction model that can detect future equipment
+          failures based on maintenance history.
+        </p>
+
+        <p>
+          The project analyzes maintenance records to find behavioral trends and
+          hidden patterns in equipment failure. It focuses on building a flexible
+          AI model that can be integrated into an existing maintenance management system.
+        </p>
+
+        <p>
+          The system is designed to be scalable, adaptable, and useful for future
+          expansion into other facility management platforms.
+        </p>
+
+        <div class="project-tags big-tags">
+          <span>Unsupervised Learning</span>
+          <span>KMeans</span>
+          <span>GMM</span>
+          <span>Data Analysis</span>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="project-media">
+      <img src="images/unifix.png" alt="UniFix Project">
+    </section>
+
+    <div class="navigation-links">
+      <a href="projects.html">← Back to Projects</a>
+      <a href="project2.html">Next Project →</a>
     </div>
 
-    <div class="project-right">
-      <p>
-        UniFix is a predictive maintenance solution that facilities within the campus perimeter of Princess Nourah bint Abdulrahman University (PNU). 
-        More particularly, the objective is to create an intelligent prediction model to predict future failures of the device based on maintenance history from 2020 to the end of 2023.
-      </p>
-      <p>
-        The histories were examined to detect behavioral trends and patterns of failure in campus equipment and facilities.
-        The project is an adaptive and very customizable predictive part, neither a stand-alone device nor a stand-alone system; 
-        it is an intelligent model that will be integrated into PNU’s current maintenance management system.
-      </p>
-      <p>
-        This design pattern makes the system scalable and flexible and pluggable into other platforms or expandable in the future if necessary.
-      </p>
-    </div>
   </main>
 
-  <!-- Navigation Between Projects -->
-  <div class="nav-links">
-    <a href="projects.html">&larr; Previous Project</a>
-    <a href="project2.html">Next Project &rarr;</a>
-  </div>
-
-  <!-- Footer -->
   <footer>
-    <div class="footer-section">
-      <p><strong>Email</strong><br>ghadaazizqh@gmail.com</p>
-    </div>
     <div class="footer-section">
       <p><strong>GitHub</strong><br>
         <a href="https://github.com/Ghada-Alqahtani" target="_blank">
@@ -116,6 +116,7 @@
         </a>
       </p>
     </div>
+
     <div class="footer-section">
       <p><strong>LinkedIn</strong><br>
         <a href="https://www.linkedin.com/in/ghada-al-qahtani-1baa10372/" target="_blank">
@@ -123,6 +124,7 @@
         </a>
       </p>
     </div>
+
     <div class="footer-section">
       <p>© 2025 by Ghada Alqahtani.</p>
     </div>
